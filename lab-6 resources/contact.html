@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Bookings | Wasi Alam Photography</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar md:navbar-expand bg-1 border-bottom" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">WASI ALAM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#contactNavDrawer" aria-controls="contactNavDrawer" aria-label="Open navigation menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="drawer" id="contactNavDrawer" tabindex="-1" aria-labelledby="contactNavDrawerLabel">
+          <div class="drawer-header">
+            <span class="drawer-title fw-bold" id="contactNavDrawerLabel">Menu</span>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close navigation menu"></button>
+          </div>
+          <div class="drawer-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Archive</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-5">
+    <h1 class="display-5 fw-bold mb-3">Book a Show or Press Shoot</h1>
+    <p class="lead mb-4">
+      Planning an underground rap show, cypher, or release party in Toronto or Mississauga? Reach out for live event coverage and backstage sets.
+    </p>
+
+    <form action="#" method="post">
+      <div class="row g-3">
+        <!-- Field 1: First Name -->
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" required>
+          </div>
+        </div>
+
+        <!-- Field 2: Last Name -->
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" name="lastName" required>
+          </div>
+        </div>
+
+        <!-- Field 3: Email -->
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="emailAddress" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="emailAddress" name="emailAddress" placeholder="name@example.com" required>
+          </div>
+        </div>
+
+        <!-- Field 4: Select Menu -->
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="shootType" class="form-label">Coverage Type</label>
+            <select class="form-control" id="shootType" name="shootType" required>
+              <option value="" selected disabled>Choose a session type</option>
+              <option value="concert">Live Concert / Club Set</option>
+              <option value="backstage">Backstage &amp; BTS Documentary</option>
+              <option value="press">Artist Press &amp; Cover Art Portraits</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Field 5: Message Textarea -->
+        <div class="col-12">
+          <div class="form-field">
+            <label for="projectMessage" class="form-label">Venue, Date &amp; Set Details</label>
+            <textarea class="form-control" id="projectMessage" name="projectMessage" rows="4" required></textarea>
+          </div>
+        </div>
+
+        <!-- Field 6: Consent Checkbox (Fixed spacing and alignment) -->
+        <div class="col-12">
+          <div class="form-field form-check ps-0">
+            <div class="d-flex align-items-start gap-2">
+              <input type="checkbox" class="form-check-input mt-1" id="contactConsent" name="contactConsent" required style="min-width: 1.25rem;">
+              <label for="contactConsent" class="form-check-label">
+                I agree to be contacted regarding event availability, media passes, and turnaround rates.
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="col-12 mt-3">
+          <button type="submit" class="btn-solid theme-primary">Send Inquiry</button>
+        </div>
+      </div>
+    </form>
+  </main>
+
+  <footer class="bg-1 border-top py-4 mt-5">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <p class="mb-0">&copy; 2026 Wasi Alam &middot; Toronto Underground Concert Photography</p>
+      <a href="index.html" class="nav-link">Back to Gallery</a>
+    </div>
+  </footer>
+
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

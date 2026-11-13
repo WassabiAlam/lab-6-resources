@@ -1,0 +1,25 @@
+:root {
+  --bs-primary: #10b981;
+  --bs-primary-rgb: 16, 185, 129;
+  --theme-primary: #10b981;
+  --theme-primary-contrast: #052e16;
+}
+
+.theme-primary {
+  --bs-theme-bg: #10b981;
+  --bs-theme-color: #052e16;
+  --bs-theme-border: #10b981;
+}
+
+.btn-solid.theme-primary {
+  background-color: #10b981;
+  border-color: #10b981;
+  color: #052e16;
+}
+
+.btn-solid.theme-primary:hover,
+.btn-solid.theme-primary:focus {
+  background-color: #059669;
+  border-color: #059669;
+  color: #ffffff;
+}

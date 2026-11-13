@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wasi Alam | Toronto Underground Concert Photography</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar md:navbar-expand bg-1 border-bottom" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">WASI ALAM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#mainNavDrawer" aria-controls="mainNavDrawer" aria-label="Open navigation menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="drawer" id="mainNavDrawer" tabindex="-1" aria-labelledby="mainNavDrawerLabel">
+          <div class="drawer-header">
+            <span class="drawer-title fw-bold" id="mainNavDrawerLabel">Menu</span>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close navigation menu"></button>
+          </div>
+          <div class="drawer-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Archive</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero / About Section -->
+    <section class="container py-4">
+      <h1 class="display-5 fw-bold">Wasi Alam — Underground Concert Photography</h1>
+      <p class="lead">
+        Third-year CCIT student at the University of Toronto Mississauga documenting the raw energy, stage lighting, and crowd culture of Toronto's underground rap scene.
+      </p>
+    </section>
+
+    <!-- Carousel: 3 Slides with Working Controls and Meaningful Alt Text -->
+    <section class="container mb-5" aria-label="Featured concert highlights">
+      <div id="featuredShowsCarousel" class="carousel slide">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="images/carousel-1.jpg" class="d-block w-100" alt="Underground rap artist leaning into the front row while performing beneath purple stage spotlights in Toronto">
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel-2.jpg" class="d-block w-100" alt="Packed Toronto venue crowd with hands raised in the air during a high-energy late-night rap set">
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel-3.jpg" class="d-block w-100" alt="Solo performer silhouetted against stage haze and warm strobe lights at an intimate DIY concert">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#featuredShowsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#featuredShowsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Card Gallery -->
+    <section id="gallery" class="container mb-5">
+      <h2 class="mb-4">More From the Pit &amp; Backstage</h2>
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/DSTRBNZ_1.jpg" class="card-img-top" alt="Two rappers performing under intense green overhead venue lighting">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Green Room Frequency</h3>
+              <p class="card-text">Close-quarters vocal exchange bathed in monochrome emerald venue lighting during a late-night Toronto set.</p>
+              <details class="mb-3">
+                <summary class="fw-semibold">Camera &amp; Lighting Notes</summary>
+                <p class="mt-2 mb-0">Shot at wide aperture to preserve shadow depth across the ceiling tiles while keeping both artists sharp in low light.</p>
+              </details>
+              <button type="button" class="btn-solid theme-primary mt-auto" data-bs-toggle="dialog" data-bs-target="#dialogShow1">
+                Session Details
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/DSTRBNZ_2.jpg" class="card-img-top" alt="Artist in a black puffer vest and sunglasses holding a wired microphone beside a striped backdrop">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Striped Curtain Set</h3>
+              <p class="card-text">Intimate DIY room energy framed by a black-and-white striped backdrop, PA speaker, and tightly packed crowd.</p>
+              <details class="mb-3">
+                <summary class="fw-semibold">Camera &amp; Lighting Notes</summary>
+                <p class="mt-2 mb-0">Captured on-camera flash bounce against the low ceiling to cast a clean silhouette shadow behind the performer.</p>
+              </details>
+              <button type="button" class="btn-solid theme-primary mt-auto" data-bs-toggle="dialog" data-bs-target="#dialogShow2">
+                Session Details
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/VAX_3.jpg" class="card-img-top" alt="Shadowed performer silhouette against a glowing blue planetary projection">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Blue Orbit Silhouette</h3>
+              <p class="card-text">High-contrast stage silhouette framed against a custom blue visual projection during a headline transition.</p>
+              <details class="mb-3">
+                <summary class="fw-semibold">Camera &amp; Lighting Notes</summary>
+                <p class="mt-2 mb-0">Metered strictly for the projector highlights so the artist's outline and silver chains cut cleanly through the dark.</p>
+              </details>
+              <button type="button" class="btn-solid theme-primary mt-auto" data-bs-toggle="dialog" data-bs-target="#dialogShow3">
+                Session Details
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/VAX_4.jpg" class="card-img-top" alt="Artist crowd surfing overhead with hands raised toward a bright green spotlight">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Primal Note Crowd Surf</h3>
+              <p class="card-text">Peak mosh-pit elevation as the crowd lifts the headliner straight into the rig lights at Primal Note Studios.</p>
+              <details class="mb-3">
+                <summary class="fw-semibold">Camera &amp; Lighting Notes</summary>
+                <p class="mt-2 mb-0">Wide-angle lens from floor level inside the pit, balancing harsh backlight flare with smiling faces in the crowd.</p>
+              </details>
+              <button type="button" class="btn-solid theme-primary mt-auto" data-bs-toggle="dialog" data-bs-target="#dialogShow4">
+                Session Details
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/VAX_5.jpg" class="card-img-top" alt="Dense concert crowd reaching toward ceiling pipes under purple and green club beams">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Hands on the Rafters</h3>
+              <p class="card-text">Pure underground chaos with fans hanging from exposed ceiling pipes under shifting magenta and neon beams.</p>
+              <details class="mb-3">
+                <summary class="fw-semibold">Camera &amp; Lighting Notes</summary>
+                <p class="mt-2 mb-0">Fast shutter speed froze airborne hands and phone flashlights without losing the ambient blue-violet club haze.</p>
+              </details>
+              <button type="button" class="btn-solid theme-primary mt-auto" data-bs-toggle="dialog" data-bs-target="#dialogShow5">
+                Session Details
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/JEF06314_graded.jpg" class="card-img-top" alt="White tour t-shirt printed with First Class Toronto underground rap lineup names">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">First Class Toronto Merch</h3>
+              <p class="card-text">Backstage still life of the First Class Toronto lineup tee featuring heavyweights and rising underground names.</p>
+              <details class="mb-3">
+                <summary class="fw-semibold">Camera &amp; Lighting Notes</summary>
+                <p class="mt-2 mb-0">Graded with warm tungsten shadows to highlight the screen-printed typography hanging backstage before doors opened.</p>
+              </details>
+              <button type="button" class="btn-solid theme-primary mt-auto" data-bs-toggle="dialog" data-bs-target="#dialogShow6">
+                Session Details
+              </button>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Six Unique Dialogs -->
+    <dialog id="dialogShow1" aria-labelledby="dialogShow1Title">
+      <div class="p-4">
+        <h3 id="dialogShow1Title" class="h5">Green Room Frequency — DSTRBNZ Series</h3>
+        <p>Documented solo in Toronto during an underground showcase. Green LED wash lights turned the compact room into an atmospheric tunnel of sound.</p>
+        <button type="button" class="btn-solid theme-primary" data-bs-dismiss="dialog">Close</button>
+      </div>
+    </dialog>
+
+    <dialog id="dialogShow2" aria-labelledby="dialogShow2Title">
+      <div class="p-4">
+        <h3 id="dialogShow2Title" class="h5">Striped Curtain Set — DSTRBNZ Series</h3>
+        <p>Captured inches from the makeshift stage area, highlighting the raw proximity between Toronto performers and their core supporters.</p>
+        <button type="button" class="btn-solid theme-primary" data-bs-dismiss="dialog">Close</button>
+      </div>
+    </dialog>
+
+    <dialog id="dialogShow3" aria-labelledby="dialogShow3Title">
+      <div class="p-4">
+        <h3 id="dialogShow3Title" class="h5">Blue Orbit Silhouette — VAX Showcase</h3>
+        <p>Shot during an atmospheric beat switch where projection visuals replaced standard stage spotlights.</p>
+        <button type="button" class="btn-solid theme-primary" data-bs-dismiss="dialog">Close</button>
+      </div>
+    </dialog>
+
+    <dialog id="dialogShow4" aria-labelledby="dialogShow4Title">
+      <div class="p-4">
+        <h3 id="dialogShow4Title" class="h5">Primal Note Crowd Surf — VAX Showcase</h3>
+        <p>Taken from the middle of the pit at Primal Note Studios in Toronto as the room erupted during the closing track.</p>
+        <button type="button" class="btn-solid theme-primary" data-bs-dismiss="dialog">Close</button>
+      </div>
+    </dialog>
+
+    <dialog id="dialogShow5" aria-labelledby="dialogShow5Title">
+      <div class="p-4">
+        <h3 id="dialogShow5Title" class="h5">Hands on the Rafters — VAX Showcase</h3>
+        <p>A candid look at Toronto's underground pit energy, where the boundary between audience and venue architecture disappears.</p>
+        <button type="button" class="btn-solid theme-primary" data-bs-dismiss="dialog">Close</button>
+      </div>
+    </dialog>
+
+    <dialog id="dialogShow6" aria-labelledby="dialogShow6Title">
+      <div class="p-4">
+        <h3 id="dialogShow6Title" class="h5">First Class Toronto Merch — Backstage Archive</h3>
+        <p>Archival detail shot capturing local event culture and tour ephemera alongside live performance coverage.</p>
+        <button type="button" class="btn-solid theme-primary" data-bs-dismiss="dialog">Close</button>
+      </div>
+    </dialog>
+  </main>
+
+  <footer class="bg-1 border-top py-4 mt-auto">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <p class="mb-0">&copy; 2026 Wasi Alam &middot; CCIT, University of Toronto Mississauga</p>
+      <a href="contact.html" class="nav-link">Book a Shoot</a>
+    </div>
+  </footer>
+
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+  <script type="module">
+    const carousel = document.getElementById('featuredShowsCarousel');
+    if (carousel) {
+      const items = Array.from(carousel.querySelectorAll('.carousel-item'));
+      const prevBtn = carousel.querySelector('.carousel-control-prev');
+      const nextBtn = carousel.querySelector('.carousel-control-next');
+
+      const showSlide = (direction) => {
+        const currentIndex = items.findIndex((item) => item.classList.contains('active'));
+        if (currentIndex === -1) return;
+        items[currentIndex].classList.remove('active');
+        const nextIndex = (currentIndex + direction + items.length) % items.length;
+        items[nextIndex].classList.add('active');
+      };
+
+      prevBtn?.addEventListener('click', () => showSlide(-1));
+      nextBtn?.addEventListener('click', () => showSlide(1));
+    }
+  </script>
+</body>
+</html>
